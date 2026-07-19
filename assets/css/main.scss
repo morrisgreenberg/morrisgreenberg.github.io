@@ -12,13 +12,17 @@
 @use "variables" with (
   $max-content-width: {{ site.max_width | default:  "930px" }},
 
-  /* --- Pastel palette override: powder blue (light mode) & peach (dark mode) --- */
-  $purple-color: #6a9bc9,
-  /* was #b509ac — now a muted powder blue; drives the light-mode accent/link color */
+  /* --- Solarized-Light-inspired pastel palette --- */
+  $white-color: #fdf6e3,
+  /* was #ffffff — Solarized "base3", drives the page background & card background */
+  $black-color: #586e75,
+  /* was #000000 — Solarized "base01", a soft slate instead of pure black for body text */
+  $purple-color: #4a90b8,
+  /* was #b509ac — soft Solarized-blue; light-mode accent/link color */
   $cyan-color: #e8a87c,
-  /* was #2698ba — now a soft peach; drives the dark-mode accent/link color */
-  $red-color-dark: #d98a73
-  /* was #b71c1c — now a muted coral; drives CV date badges and highlight text */
+  /* unchanged from the last round — soft peach; dark-mode accent/link color */
+  $red-color-dark: #d9854a
+  /* was #b71c1c — soft Solarized-orange; CV date badges & highlight text */
 );
 
 /* Your project partials — convert these files to `@use "variables";`
@@ -40,16 +44,38 @@
 @use "teachings";
 @use "typograms";
 
-/* --- Manual softening of the dark-mode background + the footer bar ---
-   $grey-color-dark isn't declared with `!default` upstream, so unlike the
-   colors above it can't be overridden via the "with (...)" config — instead
-   we redeclare the resulting CSS custom properties directly, after the
-   theme's own rules, so these win in the cascade. */
+/* --- Manual overrides for values that aren't plain !default $variables ---
+   These are hardcoded custom-property values inside the theme's _themes.scss,
+   so (like the dark-mode background in the last round) they have to be
+   redeclared directly here rather than passed through "with (...)" above. */
 :root {
-  --global-footer-bg-color: #3a3540; /* was #1c1c1d (near-black), shows in the footer bar even in light mode */
+  --global-code-bg-color: #eee8d5; /* Solarized "base2" — was a faint purple-tinted overlay */
+  --global-divider-color: rgba(88, 110, 117, 0.15); /* was rgba(0,0,0,0.1) — warmed to match the new text color */
+
+  /* Footer bar: was near-black (#1c1c1d) even in light mode; now a warm tan
+     matching the code background, with readable dark text/links on top of it. */
+  --global-footer-bg-color: #eee8d5;
+  --global-footer-text-color: #657b83;
+  --global-footer-link-color: #4a90b8;
+
+  /* Callout/blockquote blocks — pastel green / orange / pink instead of the saturated defaults */
+  --global-tip-block: #6a9b6a;
+  --global-tip-block-bg: #e8f3e3;
+  --global-tip-block-text: #3d5c3d;
+  --global-tip-block-title: #547a54;
+
+  --global-warning-block: #d9a441;
+  --global-warning-block-bg: #faf0d9;
+  --global-warning-block-text: #7a5a1a;
+  --global-warning-block-title: #b58225;
+
+  --global-danger-block: #d98fae;
+  --global-danger-block-bg: #fbe8f0;
+  --global-danger-block-text: #7a3d54;
+  --global-danger-block-title: #c26f92;
 }
 
 html[data-theme="dark"] {
-  --global-bg-color: #3a3540; /* was #1c1c1d (near-black) */
-  --global-code-bg-color: #4a4450; /* was #2c3237 */
+  --global-bg-color: #3a3540; /* unchanged from the last round */
+  --global-code-bg-color: #4a4450; /* unchanged from the last round */
 }
