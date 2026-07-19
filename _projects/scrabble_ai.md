@@ -1,0 +1,16 @@
+---
+layout: page
+title: Scrabble AI
+description: Consulting on state-of-the-art Scrabble engines
+img:
+importance: 1
+category: misc
+---
+
+In addition to being a competitive Scrabble player, I consult on Scrabble AI, working with the community building the leading open-source Scrabble engines.
+
+Recently, I've been helping refine the rack inference algorithm for [Macondo](https://domino14.github.io/macondo/), one of the top Scrabble AIs, and this work is ongoing. For more on where the underlying evaluator currently stands, see César Del Solar's writeup, [&ldquo;Beyond Leave Tables: A State-of-the-Art CNN Static Evaluator for Scrabble.&rdquo;](https://www.cesardelsolar.com/posts/2025-06-21-nn-scrabble/)
+
+I recently gave a talk for the Toronto Data Workshop (and separately at the University of Toronto Statistics Department's brown bag seminar) on where I'd like to see Scrabble engines go next, and I'm now starting to collaborate on implementing some of these ideas in Macondo and Magpie, the two leading Scrabble AIs.
+
+Watch the talk here: [&ldquo;The Past, Present, and Future of Scrabble Engines&rdquo;](https://www.youtube.com/watch?v=rxniwUT0ZCo)
