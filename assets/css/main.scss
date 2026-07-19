@@ -1,0 +1,55 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }},
+
+  /* --- Pastel palette override: powder blue (light mode) & peach (dark mode) --- */
+  $purple-color: #6a9bc9,
+  /* was #b509ac — now a muted powder blue; drives the light-mode accent/link color */
+  $cyan-color: #e8a87c,
+  /* was #2698ba — now a soft peach; drives the dark-mode accent/link color */
+  $red-color-dark: #d98a73
+  /* was #b71c1c — now a muted coral; drives CV date badges and highlight text */
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/* --- Manual softening of the dark-mode background + the footer bar ---
+   $grey-color-dark isn't declared with `!default` upstream, so unlike the
+   colors above it can't be overridden via the "with (...)" config — instead
+   we redeclare the resulting CSS custom properties directly, after the
+   theme's own rules, so these win in the cascade. */
+:root {
+  --global-footer-bg-color: #3a3540; /* was #1c1c1d (near-black), shows in the footer bar even in light mode */
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #3a3540; /* was #1c1c1d (near-black) */
+  --global-code-bg-color: #4a4450; /* was #2c3237 */
+}
