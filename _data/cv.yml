@@ -3,6 +3,7 @@ cv:
   headline: Ph.D. Candidate in Statistical Sciences
   location: Toronto, ON, Canada
   email: morris.greenberg@mail.utoronto.ca
+  phone: "+1-617-967-0609"
   website:
   social_networks:
     - network: GitHub
@@ -34,27 +35,33 @@ cv:
         start_date: 2012-08
         end_date: 2016-05
 
-    Awards and Honors:
+    Awards:
       - name: NSERC Postgraduate Scholarship - Doctoral
+        title: NSERC Postgraduate Scholarship - Doctoral
+        awarder: National Sciences and Engineering Research Council
         location: Canada
-        summary: "$101,000 CAD, National Sciences and Engineering Research Council"
-        start_date: 2023-09
-        end_date: 2026-08
+        summary: "$101,000 CAD"
+        date: 2023-09
 
       - name: Queen Elizabeth II Graduate Scholarship in Science and Technology
+        title: Queen Elizabeth II Graduate Scholarship in Science and Technology
+        awarder: Ontario Student Assistance Program
         location: Ontario
-        summary: "$15,000 CAD, Ontario Student Assistance Program"
-        start_date: 2022-09
-        end_date: 2023-08
+        summary: "$15,000 CAD"
+        date: 2022-09
 
       - name: Doctoral Recruitment Award
+        title: Doctoral Recruitment Award
+        awarder: University of Toronto
         location: Toronto, ON
-        summary: "$5,000 CAD, University of Toronto"
+        summary: "$5,000 CAD"
         date: 2021-09
 
       - name: BEST Award for Master's Research in Statistical Science
+        title: BEST Award for Master's Research in Statistical Science
+        awarder: Duke University
         location: Durham, NC
-        summary: "$500 USD, Duke University"
+        summary: "$500 USD"
         date: 2021-06
 
     Conference Presentations:
@@ -67,13 +74,15 @@ cv:
       - bullet: "Greenberg, M., Craiu, R., Campbell, K. (2023, May). Restricted Search Space MCMC Methods for Graph Inference. The Fast and Curious: Modern Markov Chain Monte Carlo, Minneapolis, MN, USA."
       - bullet: "Greenberg, M., Ma, L., Wang, Z., Ma, P., Sung, A. (2021, August). Logistic Tree Gaussian Processes (LoTGaP) for the Microbiome. Joint Statistical Meetings 2021, Next-Generation Sequencing and High-Dimensional Data Section."
 
-    Preprints and Publications:
+    Publications:
       - title: Restricted Search Space Graph MCMC via Birth-Death Processes
         authors:
           - Morris Greenberg
           - Kieran R. Campbell
           - Radu V. Craiu
         journal: "arXiv:2604.10863 [stat]"
+        publisher: "arXiv:2604.10863 [stat]"
+        url: https://arxiv.org/abs/2604.10863
         date: 2026
 
       - title: Chlorhexidine Gluconate Bathing Reduces the Incidence of Bloodstream Infections in Adults Undergoing Inpatient Hematopoietic Cell Transplantation
@@ -81,7 +90,9 @@ cv:
           - Vinay K. Giri
           - et al.
         journal: Transplantation and Cellular Therapy
+        publisher: Transplantation and Cellular Therapy
         doi: 10.1016/j.jtct.2021.01.004
+        url: https://doi.org/10.1016/j.jtct.2021.01.004
         date: 2021-01
 
       - title: Development of predictive risk models for major adverse cardiovascular events among patients with type 2 diabetes mellitus using health insurance claims data
@@ -96,7 +107,8 @@ cv:
           - M.S. Duh
           - B. Bookhart
           - C.H. Wysham
-        journal: Cardiovascular Diabetology, 17(1), p.118
+        journal: "Cardiovascular Diabetology, 17(1), p.118"
+        publisher: "Cardiovascular Diabetology, 17(1), p.118"
         date: 2018
 
       - title: Development of Risk Models for Major Adverse Chronic Renal Outcomes Among Patients with Type 2 Diabetes Mellitus Using Insurance Claims - A Retrospective Observational Study
@@ -110,9 +122,10 @@ cv:
           - M.S. Duh
           - J.B. Young
         journal: Current Medical Research and Opinion
+        publisher: Current Medical Research and Opinion
         date: 2019
 
-    Work Experience:
+    Experience:
       - company: University of Toronto Statistical Sciences Department
         position: Course Instructor
         location: Toronto, ON
@@ -158,7 +171,7 @@ cv:
           - "Derived, coded, and maintained a Markov Chain simulator for the team"
           - "Worked on analytical problems using statistical learning methods (e.g. random forests, gradient boosted algorithms, and generalized linear models) in R"
 
-    Skills:
+    Technical Skills:
       - label: Programming
         details: "R, Python, C++, STAN, Matlab, LaTeX, Stata, SAS, SQL (MySQL, Oracle SQL Developer)"
       - label: Languages
