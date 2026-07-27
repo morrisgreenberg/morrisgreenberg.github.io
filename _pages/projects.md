@@ -1,8 +1,8 @@
 ---
 layout: page
-title: miscellaneous
+title: Research & Miscellaneous Projects
 permalink: /projects/
-description: A few things I work on outside my primary research.
+description: A summary of my MCMC research, plus a few things I work on outside it.
 nav: true
 nav_order: 3
 display_categories: [misc]
