@@ -3,7 +3,7 @@ layout: page
 title: Baseball Analytics
 description: Teaching, writing, and consulting on baseball analytics
 img:
-importance: 2
+importance: 3
 category: misc
 ---
 

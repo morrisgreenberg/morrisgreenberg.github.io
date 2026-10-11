@@ -3,7 +3,7 @@ layout: page
 title: Scrabble AI
 description: Consulting on state-of-the-art Scrabble engines
 img:
-importance: 1
+importance: 2
 category: misc
 ---
 

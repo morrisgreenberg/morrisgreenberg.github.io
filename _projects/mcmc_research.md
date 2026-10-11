@@ -3,7 +3,7 @@ layout: page
 title: Restricted Search Space Graph MCMC
 description: A summary of my work on restricted search space MCMC for graph inference, using birth-death processes.
 img: assets/img/mcmc_auc_roc_comparison.png
-importance: 3
+importance: 1
 category: misc
 ---
 
